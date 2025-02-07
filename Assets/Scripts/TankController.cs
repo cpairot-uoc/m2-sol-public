@@ -35,7 +35,7 @@ public class TankController : NetworkBehaviour
             bulletSpawn.rotation);
 
         // Add velocity to the bullet
-        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 6;
+        bullet.GetComponent<Rigidbody>().linearVelocity = bullet.transform.forward * 6;
 
         // Spawn the bullet on the Clients
         NetworkServer.Spawn(bullet);

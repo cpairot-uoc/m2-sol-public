@@ -6,7 +6,7 @@ public class LobbyMenu : MonoBehaviour {
     public string serverIP = "localhost";
 
     void Awake(){
-        manager = FindObjectOfType<NetworkManager>();
+        manager = FindAnyObjectByType<NetworkManager>();
     }
 
     public void RunServer() {

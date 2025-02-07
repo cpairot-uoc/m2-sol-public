@@ -18,7 +18,7 @@ public class Health : NetworkBehaviour {
     {
         if (isLocalPlayer)
         {
-            spawnPoints = FindObjectsOfType<NetworkStartPosition>();
+            spawnPoints = FindObjectsByType<NetworkStartPosition>(FindObjectsSortMode.None);
         }
     }
 
